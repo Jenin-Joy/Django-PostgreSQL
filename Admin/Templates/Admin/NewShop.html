@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table cellpadding="10">
+        <tr>
+            <td>#</td>
+            <td>Name</td>
+            <td>Contact</td>
+            <td>Email</td>
+            <td>Address</td>
+            <td>District</td>
+            <td>Place</td>
+            <td>Photo</td>
+            <td>Proof</td>
+            <td>Action</td>
+        </tr>
+        {% for i in shop %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{i.1}}</td>
+            <td>{{i.2}}</td>
+            <td>{{i.3}}</td>
+            <td>{{i.4}}</td>
+            <td>{{i.14}}</td>
+            <td>{{i.12}}</td>
+            <td><a href="../../../media/Shop/{{i.5}}"><img src="../../../media/Shop/{{i.5}}" alt="" width="150" height="150"></a></td>
+            <td><a href="../../../media/Shop/{{i.6}}"><img src="../../../media/Shop/{{i.6}}" alt="" width="150" height="150"></a></td>
+            <td></td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
